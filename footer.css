@@ -1,0 +1,121 @@
+.podval{
+    background-color: #2963A3;
+}
+.podval_info{   
+    display: flex;
+    border-bottom: 1px solid #9D9D9D;
+    justify-content: space-between;
+}
+.podval_info_stolb_1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    
+}
+.two{
+    justify-content: space-between;
+}
+.podval_info_stolb_1_links{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    color: #FFFFFF;
+}
+.podval_info_feedback{    
+    max-width: 486px;
+}
+.podval_info_feedback_text{
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 12px;
+}
+.h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+.podval_info_feedback_input{
+    border: 0px solid ;
+    width: 266px;
+    height: 48px;
+    border-radius: 4px 0 0 4px;
+    margin: 8px 0;
+}
+.podval_info_feedback_btn{
+    position: relative;
+    top: 5px;
+    left: -20px;
+    height: 48px;
+    background-color: #16C8BB;
+    border: 0px solid;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+.podval_doc{
+    padding: 16px 0;
+    display: flex;
+}
+.podval_doc_text{
+    color: #FFFFFF;
+    margin-right: 48px;
+    font-weight: 300;
+}
+.quote::before{
+    content: "\00A9";
+}
+.podval_info_tag{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: center;
+}
+.podval_info_tag_co{
+    display: flex;
+    align-self: center;
+    margin-top: 40px;
+}
+.podval_info_tag_co a{
+    padding-right: 10px;
+}
+
+@media (width < 1200px) and (width > 768px) {
+    .podval_info_feedback{
+        max-width: 450px;
+    }
+}
+@media (width <= 768px) and (width >= 320px){
+    .podval_info{
+        flex-wrap: wrap;
+    }
+    .podval_info_feedback{
+       max-width: 450px;
+       margin-bottom: 23px;
+    }
+    .podval_info_tag{
+        align-items: flex-start;
+    }
+    .podval_info_tag_co{
+        margin-top: 40px;
+    }
+}
+@media (width < 414px){
+    .podval_info_tag_co{
+        margin-top: 20px;
+    }
+    .podval_doc{
+        flex-wrap: wrap;
+
+    }
+    .podval_doc_text{
+        margin-top: 20px;
+    }
+    .niz{
+        margin-bottom: 37px;
+    }
+    .podval_info_feedback_btn{
+        display: none;
+    }
+    .podval_info_feedback_input{
+        width: 100%;
+        border-radius: 4px;
+    }
+}
